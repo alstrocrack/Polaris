@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+$main-color: #30D5C8;
+$title-fotns: 'Fugaz One', cursive;
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.polaris-header {
+  background-color: $main-color;
+}
+
+.polaris-title {
+  font-family: $title-fotns;
+  color: #fff;
+}
