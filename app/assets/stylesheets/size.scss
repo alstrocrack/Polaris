@@ -1,0 +1,5 @@
+$base-font-szie: 16; // px
+
+@function size-px-to-rem($pixel) {
+  @return $pixel / $base-font-szie * 1rem;
+}
