@@ -14,8 +14,11 @@
  *= require_self
  */
 
+ @use './size.scss';
+
 $main-color: #30D5C8;
 $title-fotns: 'Fugaz One', cursive;
+$fund-border-radius: 10px;
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: sans-serif;
@@ -29,4 +32,19 @@ h1, h2, h3, h4, h5, h6, p {
 .polaris-title {
   font-family: $title-fotns;
   color: #fff;
+}
+
+.polaris-card {
+  width: size-px-to-rem(300); // TEMP
+  border: 2px solid $main-color;
+  border-radius: $fund-border-radius;
+  &-top {
+    &-image {
+      width: 100%;
+      border-radius: $fund-border-radius $fund-border-radius 0 0;
+    }
+  }
+  &-bottom {
+    padding: 1rem;
+  }
 }
