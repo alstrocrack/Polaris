@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0 !important;
 }
 
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .polaris-header {
   background-color: $main-color;
 }
@@ -35,7 +40,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .polaris-card {
-  width: size-px-to-rem(300); // TEMP
   border: 2px solid $main-color;
   border-radius: $fund-border-radius;
   &-top {
